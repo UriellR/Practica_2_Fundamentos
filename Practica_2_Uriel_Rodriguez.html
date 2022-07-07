@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+    let n1 = prompt("Ingresa el numero 1");
+    n1 = (n1=="")?"0":n1;
+    let n2 = prompt("Ingresa el numero 2");
+    n2 = (n2=="")?"0":n2;
+
+
+    let n3 = prompt("Que desea hacer: \n1.Suma \n2.Resta \n3.Multiplicacion \n4.Division");
+
+    if(n3 == '1'){
+    n4 = parseInt(n1) + parseInt(n2);
+    }else if( n3 == '2'){
+    n4 = parseInt(n1) - parseInt(n2);
+    }else if(n3 == '3'){
+    n4 = parseInt(n1) * parseInt(n2);
+    }else if(n3== '4'){
+    n4 = parseInt(n1) / parseInt(n2);
+    }
+    console.log(n4);
+    alert("El resultado es=" + n4 );
+
+    let a = prompt("Ingresa el valor de a");
+    let b = prompt("Ingresa el valor de b");
+    let c = prompt("Ingresa el valor de c");
+
+    if (a==0){
+      x1= (-c)/b;
+      x2=0;}
+
+   else {r = ((b^2) - 4*a*c)^1/2;
+    x1= (b + r)/(2*a);
+    x2= (b - r)/(2*a);
+    alert("El resultado de x 1 =" + x1 );
+    alert("El resultado de x 2  =" + x2);}
+    </script>
+    
+
+</body>
+ </html>
